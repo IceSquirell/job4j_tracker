@@ -8,6 +8,8 @@ public class Shop {
             if (product == null) {
                 count = index;
                 break;
+            } else {
+                count = -1;
             }
         }
         return count;
