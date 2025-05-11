@@ -21,10 +21,9 @@ public class Library {
         for (Book book : books) {
             System.out.println("Книга - " + book.getName() + " / " + book.getPages() + " страниц");
         }
-        for (int index = 0; index < books.length; index++) {
-            Book book = books[index];
-            if (book.getName().equals("Clean code")) {
-                System.out.println("Книга - " + book.getName() + " / " + book.getPages() + " страниц /" + " место на полке - " + index);
+        for (Book book : books) {
+            if ("Clean code".equals(book.getName())) {
+                System.out.println("Книга - " + book.getName() + " / " + book.getPages() + " страниц");
             }
         }
     }
